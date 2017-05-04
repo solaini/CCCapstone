@@ -1,0 +1,29 @@
+html{
+    font-size: 18px;
+}
+
+/*Div to show all boxes while modeling the page*/
+div{
+    border: 1px solid black;
+}
+/*Header Styling*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+/*Overall Content Styling*/
+
+/*Banner Styling*/
+
+/*Information Styling*/
+
+/*Course styling*/
+
+/*Exhibit Styling*/
+
+/*Footer Styling*/
