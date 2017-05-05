@@ -1,11 +1,13 @@
-/*General Adjustments*/
+/*General Adjustments & Fonts*/
 
 html{
     font-size: 16px;
 }
+
 h1{
     font-weight: 900;
     font-size: 3rem;
+    white-space: pre-wrap;
 }
 h3, h4, p{
     padding-left: 1rem;
@@ -47,9 +49,9 @@ header{
     display: flex;
     flex-direction: column;
 }
-.content:nth-child(odd){
+/*div.content:nth-child(odd){
     background-color: grey;
-}
+}*/
 /*Banner Styling*/
 .banner{
     display: flex;
@@ -57,10 +59,11 @@ header{
 }
 
 
-.ba{
+.image{
     display: flex;
     width: 80%;
     flex-direction: column;
+    flex: 3 0 0;
 }
 .bann{
     display: flex;
@@ -69,6 +72,7 @@ header{
     justify-content: center;
     line-height: 3rem;
     padding: 0.5rem;
+    flex: 1 0 0;
 }
 .bann h3, .bann p, .bann a{
     flex-wrap: wrap;
@@ -78,20 +82,21 @@ header{
 .info{
     display: flex;
 }
-.info .data{
-    display: flex;
-    flex-direction: column;
-}
-.dat{
-    display: flex;
-    width: 70%;
-}
-
 
 .block{
     display: flex;
-    width: 26.4375rem;
+    Max-width: 26.4375rem;
+    max-height: 10.5rem;
 }
+.indep{
+    padding: 2rem;
+    display: flex;
+}
+.indep img{
+    max-width: 100%;
+    display: block;
+}
+
 
 /*Course styling*/
 .course{
@@ -120,6 +125,12 @@ header{
     flex-direction: column;
     margin-top: 2rem;
     flex: 1;
+    align-items: center;
+}
+.hib{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .wide{
     display: flex;
@@ -127,6 +138,9 @@ header{
 .last{
     display: flex;
     flex-direction: column;
+}
+.lablock{
+    display: flex;
 }
 /*Footer Styling*/
 footer{
