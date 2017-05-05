@@ -1,29 +1,137 @@
+/*General Adjustments*/
+
 html{
-    font-size: 18px;
+    font-size: 16px;
 }
+h1{
+    font-weight: 900;
+    font-size: 3rem;
+}
+h3, h4, p{
+    padding-left: 1rem;
+}
+/*Image Settings*/
+.banner img,
+.info img{
+    padding: 2rem 2.5rem 2rem 1.5rem;
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+}
+
 
 /*Div to show all boxes while modeling the page*/
 div{
     border: 1px solid black;
 }
-/*Header Styling*/
+/*Header Styling.  Main sections are header and class: logo*/
 header{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    width: 100%;
 }
 .logo{
     display: flex;
     align-items: center;
 }
-/*Overall Content Styling*/
-
+.logo strong{
+    font-weight: bold;
+}
+/*Overall Content Styling under .content*/
+.content{
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content:nth-child(odd){
+    background-color: grey;
+}
 /*Banner Styling*/
+.banner{
+    display: flex;
+    background-color: #D3D3D3;
+}
 
+
+.ba{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+.bann{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 3rem;
+    padding: 0.5rem;
+}
+.bann h3, .bann p, .bann a{
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /*Information Styling*/
+.info{
+    display: flex;
+}
+.info .data{
+    display: flex;
+    flex-direction: column;
+}
+.dat{
+    display: flex;
+    width: 70%;
+}
+
+
+.block{
+    display: flex;
+    width: 26.4375rem;
+}
 
 /*Course styling*/
-
+.course{
+    display: flex;
+    flex-direction: column;
+    background-color: #D3D3D3;
+    height: auto;
+}
+.course .core{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ .blocks{
+    width: 25%;
+    background-color: #F8F8FF;
+    margin: 2rem;
+}
+.blocks img{
+    width: 100%;
+    height: auto;
+}
 /*Exhibit Styling*/
-
+.exhibit{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    flex: 1;
+}
+.wide{
+    display: flex;
+}
+.last{
+    display: flex;
+    flex-direction: column;
+}
 /*Footer Styling*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    
+}
