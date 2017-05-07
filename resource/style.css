@@ -55,8 +55,20 @@ header{
 .logo strong{
     font-weight: bold;
 }
+a{
+    text-decoration: none;
+}
 nav a{
+    display: inline-flex;
     color: black;
+    height: 100%;
+    padding: 0;
+}
+nav a:last-child{
+    margin-right: 1rem;
+}
+nav a:nth-child(-n+3){
+    border-right: 0.5rem solid rgba(144, 223, 223, 0.8)
 }
 /*Overall Content Styling under .content*/
 .content{
@@ -118,7 +130,7 @@ nav a{
     width: 35%;
 }
 .indep img{
-    width: 100%;
+    width: 100%;list-style: 
     display: block;
 }
 
