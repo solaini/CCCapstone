@@ -12,9 +12,14 @@ h1{
 h2{
     font-size: 2.5rem;
     font-weight: 800;
+    line-height: 1rem;
 }
-h3, h4, p{
+h2, h3, h4, p, .indepth a, span{
     padding-left: 1rem;
+}
+.image h2, p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 h3{
     font-size: 2rem;
@@ -24,6 +29,7 @@ h4{
 }
 p{
     font-size: 1rem;
+    line-height: 1rem;
 }
 /*Image Settings*/
 .banner img,
@@ -68,7 +74,7 @@ nav a:last-child{
     margin-right: 1rem;
 }
 nav a:nth-child(-n+3){
-    border-right: 0.5rem solid rgba(144, 223, 223, 0.8)
+    border-right: 1rem solid rgba(144, 223, 223, 0.8)
 }
 /*Overall Content Styling under .content*/
 .content{
@@ -91,16 +97,17 @@ nav a:nth-child(-n+3){
     display: flex;
     flex-direction: column;
     flex: 3 0 0;
-    width: 80%;
+    /*width: 70%;*/
 }
 .bann{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    line-height: 3rem;
+    /*line-height: 3rem;*/
     padding: 0.5rem;
     flex: 1 0 0;
+    width: 26.4375rem;
 }
 .bann h3, .bann p, .bann a{
     flex-wrap: wrap;
@@ -118,22 +125,44 @@ nav a:nth-child(-n+3){
 .info{
     display: flex;
 }
-
+.data{
+    width: 26.4375rem;
+}
 .block{
     display: flex;
-    width: 26.4375rem;
     height: 10.5rem;
+    flex: 1 0 0;
 }
+
 .indep{
     padding: 1rem;
     display: flex;
     width: 35%;
 }
+
 .indep img{
-    width: 100%;list-style: 
+    width: 100%;
     display: block;
 }
-
+.indepth{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.indep1 img{
+    width: 100%;
+    display: block;
+}
+indep1{
+    padding: 1rem;
+    display: flex;
+    width: 35%;
+}
+.indepth1{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 
 /*Course styling*/
 .course{
@@ -184,12 +213,10 @@ nav a:nth-child(-n+3){
 }
 .thes{
     display: flex;
-    flex
 }
 /*Footer Styling*/
 footer{
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem 2rem 1.5rem;
-    
 }
