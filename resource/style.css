@@ -1,7 +1,7 @@
 /*Div to show all boxes while modeling the page*/
-div{
+/*div{
     border: 1px solid black;
-}
+}*/
 
 /*General Adjustments & Fonts*/
 
@@ -105,13 +105,17 @@ nav a:nth-child(-n+3){
     display: flex;
     background-color: #D3D3D3;
 }
-
+#banner-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .supporting-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    flex: 1 0 0;
+    /*flex: 1 0 0;*/
     width: 40%;
     flex-wrap: wrap;
 }
@@ -148,6 +152,7 @@ nav a:nth-child(-n+3){
 .side-info{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-content: center;
     width: 65%;
 }
