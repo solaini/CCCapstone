@@ -38,13 +38,14 @@ p{
     padding: 1rem;
 }
 /*Image Settings*/
-.media-container img,
+
+.media-container img, 
 .media-container video{
-  display: block;
-  width: 100%;
-  padding: 1rem 1rem 2rem 1rem;
-  /*padding-bottom: 2rem;*/
+    display: block;
+    width: 100%;
+    padding: 1rem 1rem 2rem .5rem;
 }
+
 
 .media-containter{
     overflow: hidden;
@@ -52,11 +53,6 @@ p{
 
 
 
-
-
-/*div:nth-child(2){
-    border: 3px dotted red;
-}*/
 /*Header Styling.  Main sections are header and class: logo*/
 header{
     position: fixed;
@@ -99,7 +95,7 @@ nav a:nth-child(-n+3){
 .main-content{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     padding: 2rem 1.5rem;
 }
 
@@ -114,26 +110,13 @@ nav a:nth-child(-n+3){
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
+    justify-content: flex-start;
     flex: 1 0 0;
     width: 40%;
     flex-wrap: wrap;
 }
-/*.bann.a{
-    display: flex;
-    justify-content: flex-end;
-    height: 40%;
-    align-items: center;
-}
 
-.bann.c{
-    display: flex;
-    justify-content: flex-start;
-    height: 40%;
-    font-size: 2rem;
-}*/
-.supporting-content a{
+.btn{
     background-color: #696969;
     width: 95%;
     text-align: center;
@@ -144,26 +127,25 @@ nav a:nth-child(-n+3){
 /*Information Styling*/
 .info-content{
     display: flex;
-    width: 40%;
 }
-
 
 #block{
     display: flex;
     height: 10.5rem;
+    width: 100%;
 }
 
-.indep{
+.side-image{
     padding: 1rem;
     display: flex;
     width: 35%;
 }
 
-.indep img{
+.side-image img{
     width: 100%;
-    /*display: block;*/
+    display: block;
 }
-.indepth{
+.side-info{
     display: flex;
     flex-direction: column;
     align-content: center;
