@@ -104,7 +104,6 @@ nav a:nth-child(-n+3){
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*line-height: 3rem;*/
     padding: 0.5rem;
     flex: 1 0 0;
     width: 26.4375rem;
@@ -142,18 +141,18 @@ nav a:nth-child(-n+3){
 
 .indep img{
     width: 100%;
-    display: block;
+    /*display: block;*/
 }
 .indepth{
     display: flex;
     flex-direction: column;
     align-content: center;
 }
-.indep1 img{
+/*.indep1 img{
     width: 100%;
     display: block;
-}
-indep1{
+}*/
+/*indep1{
     padding: 1rem;
     display: flex;
     width: 35%;
@@ -162,7 +161,7 @@ indep1{
     display: flex;
     flex-direction: column;
     align-content: center;
-}
+}*/
 
 /*Course styling*/
 .course{
@@ -219,4 +218,16 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem 2rem 1.5rem;
+}
+@media only screen and (min-width:480px){
+    .navb{
+        display: none;
+    }
+
+}
+@media only screen and (max-width:480px){
+    .nava, .logo span{
+        display: none;
+    }
+    
 }
