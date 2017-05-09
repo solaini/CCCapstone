@@ -16,7 +16,7 @@ body{
 h1{
     font-weight: 900;
     font-size: 3rem;
-    padding: 2.5rem;
+    padding: 2rem;
     color: black;
     opacity: 0.6;
     line-height: 3rem;
@@ -28,7 +28,7 @@ h2{
     opacity: 0.6;
 }
 #banner-content h4, #banner-content a{
-    padding-left: 2.5rem;
+    padding-left: 2rem;
 }
 h2, h3, h4, p, .side-info a, span{
     padding-left: 1rem;
@@ -70,7 +70,7 @@ p, .eman{
 }
 
 /*Header Styling.  Main sections are header and class: logo*/
-/*Almost complete - need to work on hyperlinks*/
+/*Almost complete - need to work on hyperlinks to continue vert border*/
 header{
     position: fixed;
     display: flex;
@@ -86,11 +86,11 @@ header{
     display: flex;
     align-items: center;
     font-size: 1.25rem;
-    color: rgba(80, 86, 86, 0.8) 
+    color: rgba(80, 86, 86, 0.8);
 }
 .logo strong{
     font-weight: bold;
-    color: rgba(48, 49, 49, 1) 
+    color: rgba(48, 49, 49, 1);
 }
 a{
     color: skyblue;
@@ -103,12 +103,7 @@ nav a{
     height: 100%;
 
 }
-nav a:last-child{
-    margin-right: 1rem;
-}
-nav a:nth-child(-n+3){
-    border-right: 1rem solid rgba(144, 223, 223, 0.8);
-}
+
 /*Overall Content Styling under .content*/
 .content{
     padding-top: 4rem;
@@ -203,7 +198,6 @@ nav a:nth-child(-n+3){
 .course{
     display: flex;
     flex-direction: column;
-    /*background-color: #D3D3D3;*/
     height: auto;
 }
 .course .core{
@@ -216,7 +210,6 @@ nav a:nth-child(-n+3){
     background-color: #F8F8FF;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    /*padding: 1rem 0 0.5rem 0;*/
 }
 .blocks img{
     width: 100%;
@@ -270,29 +263,105 @@ footer{
     .navb, .core-mobile{
         display: none;
     }
+    nav a:last-child{
+        margin-right: 1rem;
+    }
+    nav a:nth-child(-n+3){
+        border-right: 1rem solid rgba(144, 223, 223, 0.8);
+    }
 
 }
 @media only screen and (max-width:480px){
-    .nava, .logo span, .blocks{
+   
+    .nava, .logo span, .blocks, #disap{
         display: none;
     }
+    /*Header*/
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        border: none;
+        padding-top: .5rem;
+    }
+    /*Banner Section - Done*/
+    #banner-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+        margin: 2rem 1rem;
+    }
+    h1, #banner-content p, #banner-content a{
+        width: 90%;
+    }
+    h1{
+        font-size: 2.25rem;
+        opacity: 0.75;
+    }
+    /*Info Section*/
+    .side-top{
+        width: 100%;
+        height: auto;
+    }
+    .info-content #block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        background-color: white;
+        height: 16rem;
+        border: none;
+    }
+    #block .side-image{
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    #block .side-info{
+        padding: 1rem 0 0 1rem; 
+        width: 100%;
+    }
+    #block h3{
+        font-size: 1.5rem;
+        line-height: 1rem;
+    }
+    #block p, #block a{
+        line-height: 1rem;
+        font-size: 1rem;
+    }
+    /*Course Section - Done, might need to adjust margin of blocks*/
     .core-mobile{
         display: flex;
         flex-direction: column;
         justify-content: center;
         background-color: white;
-        width: 95%;
+        padding-top: 1rem;  
+        padding-bottom: 2rem;
+    }
+    #blockid{
+        padding-top: 3rem;
+        background-color: white;
+        border: none;
+        width: 100%;
     }
     .block-mobile{
-        
         border: none;
         width: 95%;
-        margin: 0.5rem;
+        margin: 1rem 0.5rem;
     }
     .block-mobile h5{
         background-color: #D3D3D3;
         border: none;
         padding: 1rem 1rem 1rem 1rem;
-        /*margin: 0.5rem 0.5rem;*/
+    }
+    /*Thesis Section - Done*/
+    .hib .main-content{
+        width: 100%;
+    }
+    footer{
+        color: black;
+        font-size: .75rem;
     }
 }
