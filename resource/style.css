@@ -1,7 +1,7 @@
 /*Div to show all boxes while modeling the page*/
-div{
+/*div{
     border: 1px solid black;
-}
+}*/
 
 /*General Adjustments & Fonts*/
 
@@ -15,13 +15,17 @@ body{
 
 h1{
     font-weight: 900;
-    font-size: 3.8rem;
+    font-size: 3rem;
     padding: 2.5rem;
+    color: black;
+    opacity: 0.6;
+    line-height: 3rem;
 }
 h2{
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 1rem;
+    opacity: 0.6;
 }
 #banner-content h4, #banner-content a{
     padding-left: 2.5rem;
@@ -34,15 +38,23 @@ h2, h3, h4, p, .side-info a, span{
     padding-bottom: 0.5rem;
 }
 h3{
+    padding: 1rem;
     font-size: 2rem;
+    opacity: 0.7;
 }
 h4{
     font-size: 1.75rem;
+    opacity: 0.6;
+    line-height: 3rem;
 }
-p{
+p, .eman{
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 2rem;
     padding: 1rem;
+    opacity: 0.5;
+}
+.grey, .banner, .course{
+    background-color: #D3D3D3;
 }
 /*Image Settings*/
 
@@ -50,7 +62,7 @@ p{
 .media-container video{
     display: block;
     width: 100%;
-    padding: 2rem 1rem 2rem .5rem;
+    padding: 2rem 0;
 }
 
 .media-containter{
@@ -67,6 +79,7 @@ header{
     background-color: white;
     width: 100%;
     height: 4rem;
+    z-index: 2;
 }
 .logo{
     padding-left: 1.5rem;
@@ -80,6 +93,7 @@ header{
     color: rgba(48, 49, 49, 1) 
 }
 a{
+    color: lightblue;
     text-decoration: none;
     font-size: 1.25rem;
 }
@@ -87,7 +101,7 @@ nav a{
     display: inline-flex;
     color: black;
     height: 100%;
-    padding: 0;
+
 }
 nav a:last-child{
     margin-right: 1rem;
@@ -114,7 +128,7 @@ nav a:nth-child(-n+3){
 /*Banner Styling*/
 .banner{
     display: flex;
-    background-color: #D3D3D3;
+    /*background-color: #D3D3D3;*/
 }
 #banner-content{
     display: flex;
@@ -134,8 +148,9 @@ nav a:nth-child(-n+3){
     padding-bottom: 1rem;
 }
 /*need to fix the Start Here button*/
+/*Why is the start here item not center?*/
 .button{
-    background-color: #434346;
+    background-color: #505050;
     border: none;
     width: 100%;
     text-align: center;
@@ -145,21 +160,14 @@ nav a:nth-child(-n+3){
     display: inline-block;
 }
 
-/*.button {
-    background-color: #4CAF50; /* Green */
-    /*border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    
-
-}*/
 /*Information Styling*/
 .info-content{
     display: flex;
 }
-
+.info-content #block{
+    border-left: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+}
 #block{
     display: flex;
     height: 10.5rem;
@@ -186,13 +194,15 @@ nav a:nth-child(-n+3){
     align-items: flex-start;
     width: 65%;
     padding-left: 1rem;
+    line-height: 1rem;
 }
+
 
 /*Course styling*/
 .course{
     display: flex;
     flex-direction: column;
-    background-color: #D3D3D3;
+    /*background-color: #D3D3D3;*/
     height: auto;
 }
 .course .core{
@@ -201,10 +211,11 @@ nav a:nth-child(-n+3){
     justify-content: space-around;
 }
  .blocks{
-    width: 25%;
+    width: 30%;
     background-color: #F8F8FF;
-    margin: 2rem;
-    padding: 1rem auto 0.5rem auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /*padding: 1rem 0 0.5rem 0;*/
 }
 .blocks img{
     width: 100%;
@@ -247,16 +258,40 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem 2rem 1.5rem;
+    color: rgba(99, 98, 107, 0.6)
+}
+.term a{
+    color: rgba(99, 98, 107, 0.6);
+    size: 1rem;
+    padding-left: 1rem;
 }
 @media only screen and (min-width:480px){
-    .navb{
+    .navb, .core-mobile{
         display: none;
     }
 
 }
 @media only screen and (max-width:480px){
-    .nava, .logo span{
+    .nava, .logo span, .blocks{
         display: none;
     }
-    
+    .core-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        width: 95%;
+    }
+    .block-mobile{
+        
+        border: none;
+        width: 95%;
+        margin: 0.5rem;
+    }
+    .block-mobile h5{
+        background-color: #D3D3D3;
+        border: none;
+        padding: 1rem 1rem 1rem 1rem;
+        /*margin: 0.5rem 0.5rem;*/
+    }
 }
